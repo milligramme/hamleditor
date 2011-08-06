@@ -1,0 +1,15 @@
+!!!5
+%html
+  %head
+    %title guard test
+    %meta{:charset => "utf-8"}
+    %link{:rel => "stylesheet", :href => "styles/styles.css"}
+  %body
+    %h1 Guard haml/sass Test
+    %p 
+    - 256.times do |i|
+      - if i%2 == 0
+        %span{:style => "font-size: #{i}px; color: #3ed"}♥
+      - else
+        %span{:style => "font-size: #{i}px; color: #4f7"}☁
+        
